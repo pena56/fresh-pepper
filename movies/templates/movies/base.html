@@ -1,0 +1,58 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TMDB Home</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="{% url 'home' %}">
+			<img src="{% static 'img/freshlogo.png' %}" alt="">
+		</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+	    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="{% url 'search' %}">Find Your Favourite Movie</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="https://www.themoviedb.org/documentation/api" target="_blank">TMDB API Documentation</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<!--/.Navbar-->
+
+	{% block content %}
+
+	{% endblock %}
+
+
+
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+</body>
+</html>
