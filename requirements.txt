@@ -1,7 +1,7 @@
-Django=2.1.2
-gunicorn=19.9.0
-psycopg2=2.8.2
-python-decouple=3.1
-pytz=2018.5
-requests=2.21.0
-whitenoise=4.1.2
+django
+gunicorn
+psycopg2
+python-decouple
+pytz
+requests
+whitenoise
