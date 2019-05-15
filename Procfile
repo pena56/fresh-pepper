@@ -1,1 +1,1 @@
-web: gunicorn tmdb.wsgi --log-file-
+web: gunicorn tmdb.wsgi --log-file -
